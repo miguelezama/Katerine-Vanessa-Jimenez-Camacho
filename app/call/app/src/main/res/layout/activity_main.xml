@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        style="@style/styleNumFono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/strSpace"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnNum1"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum1" />
+
+        <Button
+            android:id="@+id/btnNum2"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum2" />
+
+        <Button
+            android:id="@+id/btnNum3"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum3" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnNum4"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum4" />
+
+        <Button
+            android:id="@+id/btnNum5"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum5" />
+
+        <Button
+            android:id="@+id/btnNum6"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum6" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnNum7"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum7" />
+
+        <Button
+            android:id="@+id/btnNum8"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum8" />
+
+        <Button
+            android:id="@+id/btnNum9"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum9" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnAsterisco"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strAsterisco" />
+
+        <Button
+            android:id="@+id/btnNum0"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNum0" />
+
+        <Button
+            android:id="@+id/btnNumeral"
+            style="@style/styleButton"
+            android:background="@drawable/btn_anim_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strNumeral" />
+
+    </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/styleBtnSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/strSpace" />
+
+            <Button
+                android:id="@+id/btnCall"
+                style="@style/styleButton"
+                android:background="@drawable/botonpulsado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strLlamar" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/styleButton"
+                android:background="@drawable/btn_anim_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strDelete" />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
